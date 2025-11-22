@@ -1,0 +1,38 @@
+graph FamilyTree {
+
+    KamatchiAsari [shape=box, color=blue, label="Kamatchi Asari", labelloc=b];
+    NachiMuthamma [shape=box, color=red, label="Nachi Muthamma", labelloc=b];
+    KANM [shape=circle, color=green, label="+"];
+
+    JayaramKamatchi [shape=box, color=blue, label="Jayaram Kamatchi", labelloc=b];
+    RajumaniKamatchi [shape=box, color=red, label="Rajumani Kamatchi", labelloc=b];
+    SubramaniKamatchi [shape=box, color=blue, label="Subramani Kamatchi", labelloc=b];
+
+    GanesanKamatchi [shape=box, color=blue, label="Ganesan Kamatchi", labelloc=b];
+    MuthulakshmiGanesan [shape=box, color=red, label="Muthulakshmi Ganesan", labelloc=b];
+    GKMG [shape=circle, color=green, label="+"];
+
+    GopiKrishnanGanesan [shape=box, color=blue, label="GopiKrishnan Ganesan", labelloc=b];
+    NaveenGanesan [shape=box, color=blue, label="Naveen Ganesan", labelloc=b];
+
+    { 
+        rank=same;
+        KamatchiAsari -- KANM;
+        KANM -- NachiMuthamma;
+    }
+
+    KANM -- JayaramKamatchi [color=blue];
+    KANM -- RajumaniKamatchi [color=green];
+    KANM -- SubramaniKamatchi [color=blue];
+    KANM -- GanesanKamatchi [color=blue];
+
+    {
+        rank=same;
+        GanesanKamatchi -- GKMG;
+        GKMG -- MuthulakshmiGanesan;
+    }
+
+    GKMG -- GopiKrishnanGanesan [color=blue];
+    GKMG -- NaveenGanesan [color=blue];
+    
+}
