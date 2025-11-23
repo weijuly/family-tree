@@ -1,8 +1,15 @@
 graph FamilyTree {
 
+
     KamatchiAsari [shape=box, color=blue, label="Kamatchi Asari", labelloc=b];
     NachiMuthamma [shape=box, color=red, label="Nachi Muthamma", labelloc=b];
+    Subbammal [shape=box, color=red, label="Subbammal Kamatchi", labelloc=b];
     KANM [shape=circle, color=green, label="+"];
+    KASM [shape=circle, color=green, label="+"];
+
+    RamarajKamatchi [shape=box, color=blue, label="Ramaraj Kamatchi", labelloc=b];
+    JayalakshmiRamaraj [shape=box, color=red, label="Ramaraj Jayalakshmi", labelloc=b];
+    RKJR [shape=circle, color=green, label="+"];
 
     JayaramKamatchi [shape=box, color=blue, label="Jayaram Kamatchi", labelloc=b];
     RajumaniKamatchi [shape=box, color=red, label="Rajumani Kamatchi", labelloc=b];
@@ -12,14 +19,22 @@ graph FamilyTree {
     MuthulakshmiGanesan [shape=box, color=red, label="Muthulakshmi Ganesan", labelloc=b];
     GKMG [shape=circle, color=green, label="+"];
 
+    LathaRamaraj [shape=box, color=red, label="Latha Ramaraj", labelloc=b];
+    JothiRamaraj [shape=box, color=red, label="Jothi Ramaraj", labelloc=b];
+    RajKumarRamaraj [shape=box, color=red, label="RajKumar Ramaraj", labelloc=b];
+
     GopiKrishnanGanesan [shape=box, color=blue, label="GopiKrishnan Ganesan", labelloc=b];
     NaveenGanesan [shape=box, color=blue, label="Naveen Ganesan", labelloc=b];
 
     { 
         rank=same;
+        Subbammal -- KASM;
+        KASM -- KamatchiAsari;
         KamatchiAsari -- KANM;
         KANM -- NachiMuthamma;
     }
+
+    KASM -- RamarajKamatchi [color=blue];
 
     KANM -- JayaramKamatchi [color=blue];
     KANM -- RajumaniKamatchi [color=green];
@@ -28,9 +43,18 @@ graph FamilyTree {
 
     {
         rank=same;
+        JayalakshmiRamaraj -- RKJR;
+        RKJR -- RamarajKamatchi;
+
+    }
+
+    {
+        rank=same;
         GanesanKamatchi -- GKMG;
         GKMG -- MuthulakshmiGanesan;
     }
+
+    RKJR -- LathaRamaraj [color=blue];
 
     GKMG -- GopiKrishnanGanesan [color=blue];
     GKMG -- NaveenGanesan [color=blue];

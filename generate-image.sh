@@ -1,2 +1,5 @@
 #!/bin/bash
-dot -Tsvg family-tree.dot -o docs/family-tree.svg
+for FILE in *dot; do
+    echo "$FILE"
+    dot -Tsvg $FILE -o docs/data/$FILE.svg
+done

@@ -1,0 +1,66 @@
+{
+    "members": {
+        "P001": {
+            "name": "Ganesan Kamatchi"
+        },
+        "P002": {
+            "name": "Muthulakshmi Ganesan"
+        },
+        "P003": {
+            "name": "GopiKrishnan Ganesan"
+        },
+        "P004": {
+            "name": "Naveen Ganesan"
+        },
+        "P005": {
+            "name": "Kamatchi Asari"
+        },
+        "P006": {
+            "name": "Nachi Muthamma"
+        }
+    },
+    "relationships": {
+        "P001": {
+            "P002": "wife",
+            "P003": "son",
+            "P004": "son",
+            "P005": "father",
+            "P006": "mother"
+        },
+        "P002": {
+            "P001": "husband",
+            "P003": "son",
+            "P004": "son",
+            "P005": "father-in-law",
+            "P006": "mother-in-law"
+        },
+        "P003": {
+            "P001": "father",
+            "P002": "mother",
+            "P004": "brother",
+            "P005": "paternal grandfather",
+            "P006": "paternal grandmother"
+        },
+        "P004": {
+            "P001": "father",
+            "P002": "mother",
+            "P003": "brother",
+            "P005": "paternal grandfather",
+            "P006": "paternal grandmother"
+        },
+        "P005": {
+            "P001": "son",
+            "P002": "daughter-in-law",
+            "P003": "paternal grandson",
+            "P004": "paternal grandson",
+            "P006": "wife"
+        },
+        "P006": {
+            "P001": "son",
+            "P002": "daughter-in-law",
+            "P003": "paternal grandson",
+            "P004": "paternal grandson",
+            "P005": "husband"
+        }
+    }
+}
