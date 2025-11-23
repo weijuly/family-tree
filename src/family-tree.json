@@ -17,6 +17,24 @@
         },
         "P006": {
             "name": "Nachi Muthamma"
+        },
+        "P007": {
+            "name": "Subbammal"
+        },
+        "P008": {
+            "name": "Ramaraj Kamatchi"
+        },
+        "P009": {
+            "name": "Jayalakshmi Ramaraj"
+        },
+        "P010": {
+            "name": "Latha Narayanan"
+        },
+        "P011": {
+            "name": "JothiLakshmi Ramaraj"
+        },
+        "P012": {
+            "name": "RajKumar Ramaraj"
         }
     },
     "relationships": {
@@ -53,7 +71,12 @@
             "P002": "daughter-in-law",
             "P003": "paternal grandson",
             "P004": "paternal grandson",
-            "P006": "wife"
+            "P006": "wife",
+            "P007": "wife",
+            "P008": "son",
+            "P010": "paternal granddaughter",
+            "P011": "paternal granddaughter",
+            "P012": "paternal grandson"
         },
         "P006": {
             "P001": "son",
@@ -61,6 +84,50 @@
             "P003": "paternal grandson",
             "P004": "paternal grandson",
             "P005": "husband"
+        },
+        "P007": {
+            "P005": "husband",
+            "P008": "son"
+        },
+        "P008": {
+            "P005": "father",
+            "P007": "mother",
+            "P009": "wife",
+            "P010": "daughter",
+            "P011": "daughter",
+            "P012": "son"
+        },
+        "P009": {
+            "P008": "husband",
+            "P005": "father-in-law",
+            "P007": "mother-in-law",
+            "P010": "daughter",
+            "P011": "daughter",
+            "P012": "son"
+        },
+        "P010": {
+            "P008": "father",
+            "P009": "mother",
+            "P011": "sister",
+            "P012": "brother",
+            "P005": "paternal grandfather",
+            "P007": "paternal grandmother"
+        },
+        "P011": {
+            "P008": "father",
+            "P009": "mother",
+            "P010": "sister",
+            "P012": "brother",
+            "P005": "paternal grandfather",
+            "P007": "paternal grandmother"
+        },
+        "P012": {
+            "P008": "father",
+            "P009": "mother",
+            "P011": "sister",
+            "P010": "sister",
+            "P005": "paternal grandfather",
+            "P007": "paternal grandmother"
         }
     }
 }
